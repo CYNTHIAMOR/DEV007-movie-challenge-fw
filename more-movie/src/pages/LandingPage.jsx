@@ -1,4 +1,4 @@
-import { MoviesGrid } from "../components/MoviesGrid";
+import  MoviesGrid  from "../components/MoviesGrid";
 
 function LandingPage(){
   return <MoviesGrid />

@@ -1,11 +1,11 @@
 /* eslint-disable no-undef */
 // eslint-disable-next-line no-unused-vars
-import { MoviesGrid } from "../components/MoviesGrid";
-import "../components/App.css";
+import  MoviesGrid  from "../components/MoviesGrid";
+import styles from "../components/App.css";
 import {BrowserRouter as Router,Routes,  Route, Link} from "react-router-dom"
-// import { logo } from "/logo.png";
-import { MovieDetails } from "../pages/MovieDetails.jsx";
-import {LandingPage} from "../pages/landingPage.jsx";
+import  logo  from "../assets/logo.png";
+import  MovieDetails  from "../pages/MovieDetails.jsx";
+import LandingPage from "../pages/landingPage.jsx";
 
 function App() {
   return (
@@ -15,12 +15,11 @@ function App() {
         <Link to="/">
           <h1 className={styles.title}>Movies</h1>
         </Link>
-       {/* Buscar ayuda!! <div className="headerMovie">
+        <div className="headerMovie">
           <div className="header">
-            {<img src={logo} alt={"logo"} className="logo" />}
+            <img src={logo} alt={"logo"} className="logo" />
           </div>
-          <div className="buscador"><input>Busca tu película</input></div>
-  </div> */}
+  </div>
       </header>
       <main>
         <Routes>

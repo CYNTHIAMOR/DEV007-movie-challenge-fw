@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-undef */
 import{Link} from "react-router-dom";
-import styles from "./movieCard.css";
+import styles from "./MovieCard.css";
 // import PropTypes from "prop-types";
 function MovieCard({ movie }) {
 
