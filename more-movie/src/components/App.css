@@ -1,6 +1,48 @@
-.title {
+.header{
+  grid-template-areas:
+  "headerMore"
+  "headerMovie";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto 1fr auto;
+
+    display: flex; 
+    justify-content: space-between;
+}@media (max-width: 1000px){
+  
+  .headerMain{
+          /* Reverse the axis of the header, making it vertical. */
+          flex-direction: column;
+          
+          /* Align items to the begining (the left) of the header. */
+          align-items: flex-end;
+  }
+}
+.headerMore{
+  
+  background: conic-gradient(from .5turn at center left, rgb(107, 190, 173), rgb(174, 241, 241));
+	height: 100px;
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+.headerMovie{
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	height: 120px;
+  right: 0%;
+  margin-left: 0%;
+}
+.footer {
+  padding: 20px;
   text-align: center;
-  font-size: 3rem;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
-    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  background: conic-gradient(from .5turn at center left, rgb(107, 190, 173), rgb(174, 241, 241));
+  margin-top: 20px;
+}
+
+@keyframes adjust-header{
+  to{
+    background-color: aqua;
+    font-size: 40px;
+    height: 240px; 
+  }
 }

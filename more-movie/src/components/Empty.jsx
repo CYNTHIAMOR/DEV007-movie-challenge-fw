@@ -1,4 +1,4 @@
-import styles from "../components/Empty.css";
+import styles from "./components/Empty.css";
 
 function Empty() {
   return <div className={styles.empty}>No Results</div>;

@@ -1,6 +1,6 @@
 import  MovieCard  from "./MovieCard";
 import movies from "./movies.json";
-import  styles from "../components/MoviesGrid.css";
+import  styles from "./MoviesGrid.css";
 
 function MoviesGrid() {
   return (
